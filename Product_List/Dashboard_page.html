@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Page</title>
+    <link rel="stylesheet" href="Dashboard_page.css">
+</head>
+<body>
+    <header>
+        <nav>
+                <button class="Log_in" id="Log_in" data-modal-target-login="#modal-login">Log in</button>
+                <div id="modal-login">
+                    <button class="close_button-login" data-close-button-login>&times;</button>
+                    <section class="Info_Container-login">
+                        <section class="background_img-login">
+                        </section>
+                        <section class="Info-login">
+                            <h2>Log in</h2>
+                            <img src="Logo.png" alt="Logo" class="logo">
+                            <form>
+                                <input type="email" class="email" placeholder="Email">
+                                <input type="password" class="pass" placeholder="Password">
+                                <img src="eye-close.png" alt="eye close" id="password-hidden">
+                                <input type="button"  id="login" value="Log in">
+                            </form>
+                            <a href="#">New Member? Register Here.</a>
+                        </section>
+                    </section>
+                </div>
+                <div  id="Overlay-login"></div>
+                <button id="sign_up" data-modal-target-signup="#modal-signup">Sign up</button>
+                <main id="modal-signup">
+                    <button class="close_button-signup" data-close-button>&times;</button>
+                    <section class="Info_Container-signup">
+                        <section class="background_img-signup">
+                        </section>
+                        <section class="Info-signup">
+                            <h2>Signing Up</h2>
+                            <img src="Logo.png" alt="Logo" class="logo">
+                            <form>
+                                <input type="text" id="First_name" placeholder="First Name:" class="name">
+                                <input type="text" id="Last_name" placeholder="Last Name:" class="name">
+                                <input type="email" id="email" class="email" placeholder="Email">
+                                <input type="password" id="password" class="pass" placeholder="Password">
+                                <input type="password" id="confirm_password" class="pass" placeholder="Confirm Password">
+                                <img src="eye-close.png" alt="eye close" id="password-hidden-signup">
+                                <input type="button"  id="signup" value="Sign Up"> 
+                            </form>
+                            <a href="">Already Have Account? Log in Here.</a>
+                        </section>
+                    </section>
+                </main>
+                <div  id="Overlay-signup"></div>
+        </nav>
+    </header>
+    <aside>
+        <img src="Logo.png" alt="">
+    </aside>
+    <main>
+        <section class="section1-search_cart">
+            <form>
+                <input type="text" id="search" placeholder="Search Products">
+                <img src="" alt="">
+                <button><img src="shopping-cart.png" alt="">Cart</button>
+            </form>
+        </section>
+        <section class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><button id="all_prods">All Products</button></li>
+                <li><button id="all_roses">Roses <img src="rose.png" alt="" class="img_categ"></button></li>
+                <li><button id="all_sunflowers">Sunflowers <img src="sunflower.png" class="img_categ" alt=""></button></li>
+                <li><button id="all_tulips">Tulips <img src="tulip.png" class="img_categ" alt=""></button></li>
+            </ul>
+        </section>
+        
+        <section class="products">
+            <h3>All Products</h3>
+            <section class="rose_products hidden">
+                <ul>
+                    <li><img src="Project_Assets/Roses/2a_276a149e-4fc8-4148-8556-e0bf70f8b6ad_400x.webp" alt="">
+                        <h6>Hot Romance</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱2,000</h6>
+                    </li>
+                    <li><img src="Project_Assets/Roses/BR_02_2_400x.webp" alt="">
+                        <h6>Rosarita</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱1,499</h6>
+                    </li>
+                    <li><img src="Project_Assets/Roses/CrimsonArdour2b_400x.webp" alt="">
+                        <h6>Crimson Ardour</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱2,969</h6>
+                    </li>
+                    <li><img src="Project_Assets/Roses/PinkMoment3a_400x.webp" alt="">
+                        <h6>Pink Moment</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱2,507</h6>
+                    </li>
+                    <li><img src="Project_Assets/Roses/red-charm-14548245872753_400x.webp" alt="">
+                        <h6>Red Charm</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱1,699</h6>
+                    </li>
+                </ul>
+            </section>
+            <section class="sunflower_products hidden">
+                <ul>
+                    <li><img src="Project_Assets/Sunflower/Bloomydays1_400x.webp" alt="">
+                        <h6>Bloomy Days</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱2,999</h6>
+                    </li>
+                    <li><img src="Project_Assets/Sunflower/BQ4_1_400x.webp" alt="">
+                        <h6>Sunlit Cascade</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱899</h6>
+                    </li>
+                    <li><img src="Project_Assets/Sunflower/DSC01343_400x.webp" alt="">
+                        <h6>Sunday Sun</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱1,199</h6>
+                    </li>
+                    <li><img src="Project_Assets/Sunflower/FC_PHBudget-Pink-Puff_4b2c0795-0aa6-4db1-9527-972a1ca5ad51_400x.webp" alt="">
+                        <h6>Pink Puff</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱1,679</h6>
+                    </li>
+                    <li><img src="Project_Assets/Sunflower/PH_007_400x.webp" alt="">
+                        <h6>Helia</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱1,999</h6>
+                    </li>
+                </ul>
+            </section>
+            <section class="tulip_products hidden">
+                <ul>
+                    <li><img src="Project_Assets/Tulips/0720-Brooklyn-Thumbnail-01_400x.webp" alt="">
+                        <h6>Brooklyn</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱3,319</h6>
+                    </li>
+                    <li><img src="Project_Assets/Tulips/0720-Isabelle-Thumbnail-01_400x.webp" alt="">
+                        <h6>Isabelle</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱3,399</h6>
+                    </li>
+                    <li><img src="Project_Assets/Tulips/1a_8d55dd1c-9b8e-44b9-9f61-00c716c50d00_400x.webp" alt="">
+                        <h6>Adelyn</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱1,799</h6>
+                    </li>
+                    <li><img src="Project_Assets/Tulips/1a_a2ca8265-2026-494a-88ee-24e16d05466c_400x.webp" alt="">
+                        <h6>Astraea</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱2,199</h6>
+                    </li>
+                    <li><img src="Project_Assets/Tulips/BR_07_2_1_400x.webp" alt="">
+                        <h6>Coralyn</h6>
+                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                        <h6>₱3,599</h6>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    
+
+    <script src="Dashboard_page.js"></script>
+</body>
+</html>
