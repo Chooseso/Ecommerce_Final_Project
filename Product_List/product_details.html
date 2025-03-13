@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product View</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container1">
+            <aside class="sidebar">
+                <div class="logo">
+                    <img src="Logo.png" alt="Logo">
+                </div>
+            </aside>
+            <nav class="navbar">
+                <span class="text">Welcome</span>
+                <img src="profile.jpg" alt="Profile" class="profile-pic">
+            </nav>
+        </div>
+        <div class="container2">
+            <header class="header">
+                <div class="search-box">
+                    <input class="input-color" type="text" placeholder="Search Products">
+                    <button><img src="searchbar.png"></button>
+                </div>
+                <span>|</span>
+                <button class="cart-btn"><img src="cart.png" alt="Cart">Cart</button>
+            </header>
+            <div class="container">
+                <section class="all-products">
+                    <div class="all-products-wrapper">
+                        <img class="arrow-left" src="arrowLeft.svg" alt="">
+                        <p class="title-section">All Products</p>
+                    </div>
+                    <section class="main-product-container">
+                        <figure>
+                            <img id="product-image" class="main-img" src="" alt="Product Image">
+                            <div class="sub-img-container">
+                                <img id="sub-img-1" class="sub-img" src="" alt="Product Image">
+                                <img id="sub-img-2" class="sub-img" src="" alt="Product Image">
+                                <img id="sub-img-3" class="sub-img" src="" alt="Product Image">
+                                <img id="sub-img-4" class="sub-img" src="" alt="Product Image">
+                            </div>
+                        </figure>
+                        <figure class="details-container">
+                            <div class="main-details">
+                                <h3 id="product-name"></h3>
+                                <p id="product-price" class="price"></p>
+                                <p id="product-description" class="description"></p>
+                            </div>
+                            <div class="main-values">
+                                <div class="quantity">
+                                    <p class="values-text">Quantity</p>
+                                    <form>
+                                        <input class="quantity-input" type="number" name="number" placeholder="1">
+                                        <div>
+                                            <img class="arrow-keys" src="arrowUp.png" alt="Increase Quantity">
+                                            <img class="arrow-keys" src="arrowDown.png" alt="Decrease Quantity">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="total-amount">
+                                    <p class="values-text">Total Amount</p>
+                                    <form>
+                                        <input type="text" name="number" readonly>
+                                    </form>
+                                </div>
+                                <a class="btn-add-to-cart" href="cart_pay/index.html"><img src="cart.png" alt="Cart">Add to Cart</a>
+                            </div>
+                        </figure>
+                    </section>
+                </section>
+                <section class="similar-items">
+                    <p class="title-section">Similar Items</p>
+                    <ul>
+                        <li>
+                            <img class="similar-items-img" src="Bloomydays1_400x.webp" alt="Sunflower">
+                            <figure class="similar-items-flex">
+                                <div>
+                                    <h5>Bloomy Days</h5>
+                                    <div class="rating">
+                                        <img src="starH.png" alt="1 Star">
+                                        <img src="starH.png" alt="2 Star">
+                                        <img src="starH.png" alt="3 Star">
+                                        <img src="starH.png" alt="4 Star">
+                                        <img src="starN.png" alt="5 Star">
+                                        <p>39 Rating</p>
+                                    </div>
+                                </div>
+                                <p class="price-one">₱ 2,999</p>
+                            </figure>
+                        </li>
+                        <li>
+                            <img class="similar-items-img" src="BQ4_1_400x.webp" alt="Sunflower">
+                            <figure class="similar-items-flex">
+                                <div>
+                                    <h5>Sunlit Cascade</h5>
+                                    <div class="rating">
+                                        <img src="starH.png" alt="1 Star">
+                                        <img src="starH.png" alt="2 Star">
+                                        <img src="starH.png" alt="3 Star">
+                                        <img src="starH.png" alt="4 Star">
+                                        <img src="starN.png" alt="5 Star">
+                                        <p>4 Rating</p>
+                                    </div>
+                                </div>
+                                <p class="price-one">₱ 899</p>
+                            </figure>
+                        </li>
+                        <li>
+                            <img class="similar-items-img" src="0720-Brooklyn-Thumbnail-01_400x.webp" alt="Tulips">
+                            <figure class="similar-items-flex">
+                                <div>
+                                    <h5>Brooklyn</h5>
+                                    <div class="rating">
+                                        <img src="starH.png" alt="1 Star">
+                                        <img src="starH.png" alt="2 Star">
+                                        <img src="starH.png" alt="3 Star">
+                                        <img src="starH.png" alt="4 Star">
+                                        <img src="starH.png" alt="5 Star">
+                                    <p>5 Rating</p>
+                                    </div>
+                                </div>
+                                <p class="price-one">₱ 3,319</p>
+                            </figure>
+                        </li>
+                        <li>
+                            <img class="similar-items-img" src="0720-Isabelle-Thumbnail-01_400x.webp" alt="Tulips">
+                            <figure class="similar-items-flex">
+                                <div>
+                                    <h5>Isabelle</h5>
+                                    <div class="rating">
+                                    <img src="starH.png" alt="1 Star">
+                                    <img src="starH.png" alt="2 Star">
+                                    <img src="starH.png" alt="3 Star">
+                                    <img src="starH.png" alt="4 Star">
+                                    <img src="starN.png" alt="5 Star">
+                                    <p>3 Rating</p>
+                                    </div>
+                                </div>
+                                <p class="price-one">₱ 3,399</p>
+                            </figure>
+                        </li>
+                        <li>
+                            <img class="similar-items-img" src="1a_8d55dd1c-9b8e-44b9-9f61-00c716c50d00_400x.webp" alt="Tulips">
+                            <figure class="similar-items-flex">
+                                <div>
+                                    <h5>Adelyn</h5>
+                                    <div class="rating">
+                                        <img src="starH.png" alt="1 Star">
+                                        <img src="starH.png" alt="2 Star">
+                                        <img src="starH.png" alt="3 Star">
+                                        <img src="starH.png" alt="4 Star">
+                                        <img src="starH.png" alt="5 Star">
+                                    <p>1 Rating</p>
+                                    </div>
+                                </div>
+                                <p class="price-one">₱ 1,799</p>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <script>
+            function getProductDetails() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const productName = urlParams.get('name');
+                const productImage = urlParams.get('image');
+                const productPrice = urlParams.get('price');
+                const productDescription = urlParams.get('description');
+
+                if (productName && productImage && productPrice && productDescription) {
+                    document.getElementById('product-name').innerText = decodeURIComponent(productName);
+                    document.getElementById('product-image').src = decodeURIComponent(productImage);
+                    document.getElementById('product-price').innerText = `₱ ${decodeURIComponent(productPrice)}`;
+                    document.getElementById('product-description').innerText = decodeURIComponent(productDescription);
+                    
+                    document.getElementById('sub-img-1').src = decodeURIComponent(productImage);
+                    document.getElementById('sub-img-2').src = decodeURIComponent(productImage);
+                    document.getElementById('sub-img-3').src = decodeURIComponent(productImage);
+                    document.getElementById('sub-img-4').src = decodeURIComponent(productImage);
+                } else {
+                    console.error('Product details not found!');
+                }
+            }
+            window.onload = getProductDetails;
+            document.addEventListener("DOMContentLoaded", function () {
+    const quantityInput = document.querySelector(".quantity-input");
+    const increaseBtn = document.querySelector(".arrow-keys:nth-of-type(1)"); // First arrow (increase)
+    const decreaseBtn = document.querySelector(".arrow-keys:nth-of-type(2)"); // Second arrow (decrease)
+    const totalAmountInput = document.querySelector(".total-amount input");
+    const urlParams = new URLSearchParams(window.location.search);
+    let product_price = urlParams.get('price')
+    let price = parseInt(product_price)
+
+    console.log(price)
+    // const pricePerItem = 2000; // Base price of the product
+
+    // Function to update total price
+    function updateTotal() {
+        let quantity = parseInt(quantityInput.value);
+        if (isNaN(quantity) || quantity < 1) {
+            quantity = 1; // Prevent invalid or negative quantity
+        }
+        quantityInput.value = quantity;
+        totalAmountInput.value = `₱ ${quantity * price}`;
+    }
+
+    // Increase quantity
+    increaseBtn.addEventListener("click", function () {
+        quantityInput.value = parseInt(quantityInput.value) + 1;
+        updateTotal();
+    });
+
+    // Decrease quantity (but not below 1)
+    decreaseBtn.addEventListener("click", function () {
+        if (parseInt(quantityInput.value) > 1) {
+            quantityInput.value = parseInt(quantityInput.value) - 1;
+            updateTotal();
+        }
+    });
+
+    // Listen for manual input change
+    quantityInput.addEventListener("input", updateTotal);
+    
+    // Initialize total on page load
+    updateTotal();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const addToCartBtn = document.querySelector(".btn-add-to-cart");
+    
+    addToCartBtn.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent page reload
+
+        const productName = document.getElementById("product-name").innerText;
+        const productImage = document.getElementById("product-image").src;
+        const productPrice = document.getElementById("product-price").innerText.replace("₱", "").trim();
+        const quantity = document.querySelector(".quantity-input").value;
+        const totalPrice = parseFloat(productPrice) * parseInt(quantity);
+
+        // Store each product in localStorage separately
+        const itemCount = localStorage.getItem("cartCount") || 0;
+        localStorage.setItem(`cartItem${itemCount}`, `${productName}|${productImage}|${productPrice}|${quantity}|${totalPrice}`);
+        localStorage.setItem("cartCount", parseInt(itemCount) + 1); // Update cart count
+
+        window.location.href = "cart_pay/index.html"; // Redirect to cart
+    });
+});
+        </script>
+    </body>
+</html>

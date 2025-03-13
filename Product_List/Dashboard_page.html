@@ -20,8 +20,8 @@
                             <h2>Log in</h2>
                             <img src="Logo.png" alt="Logo" class="logo">
                             <form action="">
-                                <input type="email" class="email" placeholder="Email">
-                                <input type="password" class="pass" placeholder="Password">
+                                <input type="email" class="email" placeholder="Email" id="e">
+                                <input type="password" class="pass" placeholder="Password" id="p">
                                 <img src="eye-close.png" alt="eye close" id="password-hidden">
                                 <input type="button"  id="login" value="Log in">
                             </form>
@@ -56,12 +56,12 @@
     <aside>
         <img src="Logo.png" alt="">
     </aside>
-    <main>
+    <main id="product_list">
         <section class="section1-search_cart">
             <form>
                 <input type="text" id="search" placeholder="Search Products">
                 <img src="" alt="">
-                <button><img src="shopping-cart.png" alt="">Cart</button>
+                <a href="cart_pay/index.html"><img src="shopping-cart.png" alt="">Cart</a>
             </form>
         </section>
         <section class="categories">
@@ -78,89 +78,105 @@
             <h3>All Products</h3>
             <section class="rose_products hidden">
                 <ul>
-                    <li><img src="Project_Assets/Roses/2a_276a149e-4fc8-4148-8556-e0bf70f8b6ad_400x.webp" alt="">
-                        <h6>Hot Romance</h6>
-                        <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
-                        <h6>₱2,000</h6>
-                    </li>
-                    <li><img src="Project_Assets/Roses/BR_02_2_400x.webp" alt="">
+                    <a href="product_details.html?name=Hot%20Romance&price=2000&image=Project_Assets/Roses/2a_276a149e-4fc8-4148-8556-e0bf70f8b6ad_400x.webp&description=A bouquet of red roses accompanied by white statice. A bouquet wrapped to perfection and suitable for any occasions as red roses simply symbolizes your passion, true love and desire while leaving the white statice to portray your utmost sincerity. This is the go-to gift that expresses your love and intentions without having to say a word.">
+                        <li>
+                            <img src="Project_Assets/Roses/2a_276a149e-4fc8-4148-8556-e0bf70f8b6ad_400x.webp" alt="">
+                            <h6>Hot Romance</h6>
+                            <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
+                            <h6>₱2,000</h6>
+                        </li>
+                    </a>
+                    <a href="product_details.html?name=Rosarita&price=1499&image=Project_Assets/Roses/BR_02_2_400x.webp&description=Need a quick pop of colour in your home? Have our bouquet of classic red and green blossoms complement your spaces for a burst of pizzaz unlike any other."><li><img src="Project_Assets/Roses/BR_02_2_400x.webp" alt="">
                         <h6>Rosarita</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱1,499</h6>
-                    </li>
-                    <li><img src="Project_Assets/Roses/CrimsonArdour2b_400x.webp" alt="">
+                    </li></a>
+                    <a href="product_details.html?name=Crimson%20Ardour&price=2969&image=Project_Assets/Roses/CrimsonArdour2b_400x.webp&description=Let your passion speak through the whispers of petals - painted a crimson as deep as your love. Sweep your darling off their feet with our Crimson Ardour flower arrangement bursting with marvelous red roses - a timeless symbol of undying love."><li><img src="Project_Assets/Roses/CrimsonArdour2b_400x.webp" alt="">
                         <h6>Crimson Ardour</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱2,969</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Pink%20Moment&price=2507&image=Project_Assets/Roses/PinkMoment3a_400x.webp&description=Beautiful sweet blooms of Lilies,Roses, and Carnation Sprays. Hand wrapped to perfection. Perfect for all occasions.">
                     <li><img src="Project_Assets/Roses/PinkMoment3a_400x.webp" alt="">
                         <h6>Pink Moment</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱2,507</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Red%20Charm&price=1699&image=Project_Assets/Roses/red-charm-14548245872753_400x.webp&description=Show your loved one that you keep them close in your thoughts by charming them with a beautifully arranged bouquet of red roses and peacock gold. The perfect bouquet to express your love and appreciation.">
                     <li><img src="Project_Assets/Roses/red-charm-14548245872753_400x.webp" alt="">
                         <h6>Red Charm</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱1,699</h6>
-                    </li>
+                    </li></a>
                 </ul>
             </section>
             <section class="sunflower_products hidden">
                 <ul>
+                    <a href="product_details.html?name=Bloomy%20Days&price=2999&image=Project_Assets/Sunflower/Bloomydays1_400x.webp&description=Five wonderful, large sunflowers that boast with energy are a great way to lighten up any moment of the day.
+                    Their open face of the sunflower symbolizes the sun itself, conveying both warmth and happiness, but also longevity adoration.">
                     <li><img src="Project_Assets/Sunflower/Bloomydays1_400x.webp" alt="">
                         <h6>Bloomy Days</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱2,999</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Sunlit%20Cascade&price=899&image=Project_Assets/Sunflower/BQ4_1_400x.webp&description=Bask in the golden gleam of our radiant Sunlit Cascade mini bouquet. Crowned with a fresh sunflower, this effervescent arrangement features a medley of lush foliage and aster blooms - perfect for adding a touch of brightness and magic to that special someone's day!">
                     <li><img src="Project_Assets/Sunflower/BQ4_1_400x.webp" alt="">
                         <h6>Sunlit Cascade</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱899</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Sunday%20Sun&price=1199&image=Project_Assets/Sunflower/DSC01343_400x.webp&description=Bask in the light of our Sunday Sunflower arrangement - a bouquet brimming with purple statice flowers, soi, and papua leaves, with a bright golden sunflower right in between. Send this beautiful flower bouquet to someone, and brighten up their day.">
                     <li><img src="Project_Assets/Sunflower/DSC01343_400x.webp" alt="">
                         <h6>Sunday Sun</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱1,199</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Pink%20Puff&price=1679&image=Project_Assets/Sunflower/FC_PHBudget-Pink-Puff_4b2c0795-0aa6-4db1-9527-972a1ca5ad51_400x.webp&description=A sweet surprise that you can give any day of the week for any occasion without having to break the bank! A beautiful and simple bouquet that can sweeten the birthday celebrant, make someone smile as a sorry gift, or to delight your significant other!">
                     <li><img src="Project_Assets/Sunflower/FC_PHBudget-Pink-Puff_4b2c0795-0aa6-4db1-9527-972a1ca5ad51_400x.webp" alt="">
                         <h6>Pink Puff</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱1,679</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Helia&price=1999&image=Project_Assets/Sunflower/PH_007_400x.webp&description=Bright, bold, and and beyond beautiful - our Helia flower bouquet with luminous red roses, sunflowers, and sprays of white statice make for the perfect bouquet worthy of the brightest of celebrations.">
                     <li><img src="Project_Assets/Sunflower/PH_007_400x.webp" alt="">
                         <h6>Helia</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱1,999</h6>
-                    </li>
+                    </li></a>
                 </ul>
             </section>
             <section class="tulip_products hidden">
                 <ul>
+                    <a href="product_details.html?name=Brooklyn&price=3319&image=Project_Assets/Tulips/0720-Brooklyn-Thumbnail-01_400x.webp&description=Tulips are flowers that never fail to impress especially on special occasions such as birthdays and anniversaries. Surprise your loved ones with our beautifully arranged bouquet of imported Tulips from Holland!">
                     <li><img src="Project_Assets/Tulips/0720-Brooklyn-Thumbnail-01_400x.webp" alt="">
                         <h6>Brooklyn</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱3,319</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Isabelle&price=3399&image=Project_Assets/Tulips/0720-Isabelle-Thumbnail-01_400x.webp&description=Tulips are flowers that never fail to impress especially on special occasions such as birthdays and anniversaries. Surprise your loved ones with our beautifully arranged bouquet of imported Tulips from Holland!">
                     <li><img src="Project_Assets/Tulips/0720-Isabelle-Thumbnail-01_400x.webp" alt="">
                         <h6>Isabelle</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱3,399</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Adelyn&price=1799&image=Project_Assets/Tulips/1a_8d55dd1c-9b8e-44b9-9f61-00c716c50d00_400x.webp&description=A trio of vibrant yellow tulip bulbs, arranged together in our classic cream wrapping. Make even the most mundane of days thrice as magical, with our sweet, simple & sublime Adelyn floral arrangement.">
                     <li><img src="Project_Assets/Tulips/1a_8d55dd1c-9b8e-44b9-9f61-00c716c50d00_400x.webp" alt="">
                         <h6>Adelyn</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱1,799</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Astraea&price=2199&image=Project_Assets/Tulips/1a_a2ca8265-2026-494a-88ee-24e16d05466c_400x.webp&description=Gentle caresses of pastel pink, orange & purple hues, medleyed together to bring you our whimsical Astraea flower bouquet. Featuring a miscellany of roses, tulips & berries - this arrangement makes the perfect pick for the most magical celebrations that life sends your way.">
                     <li><img src="Project_Assets/Tulips/1a_a2ca8265-2026-494a-88ee-24e16d05466c_400x.webp" alt="">
                         <h6>Astraea</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱2,199</h6>
-                    </li>
+                    </li></a>
+                    <a href="product_details.html?name=Coralyn&price=3599&image=Project_Assets/Tulips/BR_07_2_1_400x.webp&description=Indulge in the pinkest of moments through this sweet-looking creation. Its soft colours paired with beautiful petals make for a pleasant feeling like no other, ideal for any space you could think of">
                     <li><img src="Project_Assets/Tulips/BR_07_2_1_400x.webp" alt="">
                         <h6>Coralyn</h6>
                         <p>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(36) ratings</span></p>
                         <h6>₱3,599</h6>
-                    </li>
+                    </li></a>
                 </ul>
             </section>
         </section>
