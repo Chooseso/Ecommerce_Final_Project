@@ -151,7 +151,29 @@ document.getElementById('all_tulips').addEventListener('click', function() {
     document.querySelector('.tulip_products').classList.remove('hidden');
 });
 
+
 document.querySelector("form").addEventListener("submit", function(e){
     e.preventDefault()
 })
+
+
+
+
+
+const first_name = document.getElementById("First_name")
+const last_name = document.getElementById("Last_name")
+const signup = document.getElementById("signup")
+
+let name = ""
+
+signup.addEventListener("click", function(){
+    name = first_name.value + " " + last_name.value
+    const sign_up_nav = document.getElementById("sign_up")
+    const login_nav = document.getElementById("Log_in")
+    const welcome = document.getElementById("welcome")
+    welcome.innerText = `Welcome: ${name}`
+    sign_up_nav.style.display ="none"
+    login_nav.style.display ="none"
+})
+
 
