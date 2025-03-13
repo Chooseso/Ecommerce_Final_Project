@@ -156,24 +156,46 @@ document.querySelector("form").addEventListener("submit", function(e){
     e.preventDefault()
 })
 
-
-
-
-
 const first_name = document.getElementById("First_name")
 const last_name = document.getElementById("Last_name")
 const signup = document.getElementById("signup")
 
 let name = ""
+document.getElementById('login').addEventListener('click', function () {
+    const email = document.querySelector(".email").value
+    const pass = document.querySelector(".pass").value
+    if(email == "admin@gmail.com"){
+        name.innerText = "Welcome: Admin"
+    }
+    else{
+        alert("Invalid Email")
+    }
 
-signup.addEventListener("click", function(){
-    name = first_name.value + " " + last_name.value
-    const sign_up_nav = document.getElementById("sign_up")
-    const login_nav = document.getElementById("Log_in")
-    const welcome = document.getElementById("welcome")
-    welcome.innerText = `Welcome: ${name}`
-    sign_up_nav.style.display ="none"
-    login_nav.style.display ="none"
-})
+    console.log(email + pass)
+    const modalLogin = document.querySelector("#modal-login");
+    CloseModal(modalLogin);
+});
+
+signup.addEventListener("click", function () {
+
+    name = first_name.value + " " + last_name.value;
+    const sign_up_nav = document.getElementById("sign_up");
+    const login_nav = document.getElementById("Log_in");
+    const welcome = document.getElementById("welcome");
+    welcome.innerText = `Welcome: ${name}`;
+
+    sign_up_nav.style.display = "none";
+    login_nav.style.display = "none";
 
 
+    const modalSignup = document.querySelector("#modal-signup");
+    CloseModal(modalSignup);
+});
+function CloseModal(modal) {
+    if (modal == null) {
+        return;
+    }
+    modal.classList.remove("active");
+    overlay_signup.classList.remove("active"); // Ensure this is also handled for the signup modal
+    overlay.classList.remove("active"); // Ensure this is also handled for the login modal
+}
