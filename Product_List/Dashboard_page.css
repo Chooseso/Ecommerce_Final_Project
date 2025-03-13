@@ -4,6 +4,10 @@
     box-sizing: border-box;
     border: none;
 }
+a{
+    text-decoration: none;
+    all: unset;
+}
 body{
     display: flex;
     flex-direction: row-reverse;
@@ -92,7 +96,7 @@ main .section1-search_cart form #search{
     background-color: #e0d8b0a8;
     color: #414833;
 }
-main .section1-search_cart form button{
+main .section1-search_cart form a{
     min-width: 100px;
     padding: 10px;
     font-size: 25px;
@@ -100,8 +104,9 @@ main .section1-search_cart form button{
     border-radius: 10px;
     cursor: pointer;
     color: #414833;
+    text-decoration: none;
 }
-main .section1-search_cart form button img{
+main .section1-search_cart form a img{
     height: 20px;
     
 }
@@ -464,4 +469,70 @@ main .products section ul li p span{
 #Overlay-signup.active{
     opacity: 1;
     pointer-events: all;
+}
+/* #product_list{
+    visibility: hidden;
+} */
+
+
+#product_details{
+    border: 1px solid red;
+    height: auto;
+    display: flex;
+    gap: 50px;
+}
+#product_details section{
+    border: 1px solid rgb(7, 6, 6);
+    height: 300px;
+    width: 100%;
+}
+
+
+#product_view{
+    display: flex;
+    gap: 10px;
+}
+#product_view img, #details{
+    border: 1px solid red;
+}
+
+#product_view img{
+    width: 30%;
+}
+#product_view #details{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#product_view #details h1{
+    font-size: 50px;
+}
+#product_view #details h3{
+    font-size: 30px;
+}
+
+#product_view #details p{
+    font-size: 20px;
+}
+#product_view #details form{
+    display: flex;
+    margin-left: 10px;
+    height: auto;
+    gap: 5px;
+}
+#product_view #details form label{
+    font-size: 25px;
+    margin-right: 10px;
+}
+#product_view #details form input{
+    border: 1px solid black;
+    width: 10%;
+    text-align: center;
+}
+#product_view #details form button{
+    width: 15%;
+    padding: 10px;
 }

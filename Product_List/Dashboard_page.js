@@ -162,16 +162,6 @@ const signup = document.getElementById("signup")
 
 let name = ""
 document.getElementById('login').addEventListener('click', function () {
-    const email = document.querySelector(".email").value
-    const pass = document.querySelector(".pass").value
-    if(email == "admin@gmail.com"){
-        name.innerText = "Welcome: Admin"
-    }
-    else{
-        alert("Invalid Email")
-    }
-
-    console.log(email + pass)
     const modalLogin = document.querySelector("#modal-login");
     CloseModal(modalLogin);
 });
@@ -196,6 +186,8 @@ function CloseModal(modal) {
         return;
     }
     modal.classList.remove("active");
-    overlay_signup.classList.remove("active"); // Ensure this is also handled for the signup modal
-    overlay.classList.remove("active"); // Ensure this is also handled for the login modal
+    overlay_signup.classList.remove("active");
+    overlay.classList.remove("active");
 }
+
+
