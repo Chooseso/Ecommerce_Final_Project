@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container1">
+        <aside class="sidebar">
+            <div class="logo">
+                <img class="sidebar-logo" src="Logo.png" alt="Logo">
+            </div>
+        </aside>
+        <nav class="navbar">
+            <span class="text">Welcome</span>
+            <img src="profile.jpg" alt="Profile" class="profile-pic">
+        </nav>
+    </div>
+    <div class="container2">
+        <header class="header">
+            <div class="search-box">
+                <input class="input-color" type="text" placeholder="Search Products">
+                <button><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.8 0C9.86869 0 11.8526 0.821783 13.3154 2.28457C14.7782 3.74735 15.6 5.73131 15.6 7.8C15.6 9.732 14.892 11.508 13.728 12.876L14.052 13.2H15L21 19.2L19.2 21L13.2 15V14.052L12.876 13.728C11.508 14.892 9.732 15.6 7.8 15.6C5.73131 15.6 3.74735 14.7782 2.28457 13.3154C0.821783 11.8526 0 9.86869 0 7.8C0 5.73131 0.821783 3.74735 2.28457 2.28457C3.74735 0.821783 5.73131 0 7.8 0ZM7.8 2.4C4.8 2.4 2.4 4.8 2.4 7.8C2.4 10.8 4.8 13.2 7.8 13.2C10.8 13.2 13.2 10.8 13.2 7.8C13.2 4.8 10.8 2.4 7.8 2.4Z" fill="#9C89FF"/>
+                    </svg>
+                </button>
+            </div>
+            <span>|</span>
+            <button class="cart-btn"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 16C14.89 16 14 16.89 14 18C14 18.5304 14.2107 19.0391 14.5858 19.4142C14.9609 19.7893 15.4696 20 16 20C16.5304 20 17.0391 19.7893 17.4142 19.4142C17.7893 19.0391 18 18.5304 18 18C18 16.89 17.1 16 16 16ZM0 0V2H2L5.6 9.59L4.24 12.04C4.09 12.32 4 12.65 4 13C4 13.5304 4.21071 14.0391 4.58579 14.4142C4.96086 14.7893 5.46957 15 6 15H18V13H6.42C6.3537 13 6.29011 12.9737 6.24322 12.9268C6.19634 12.8799 6.17 12.8163 6.17 12.75C6.17 12.7 6.18 12.66 6.2 12.63L7.1 11H14.55C15.3 11 15.96 10.58 16.3 9.97L19.88 3.5C19.95 3.34 20 3.17 20 3C20 2.73478 19.8946 2.48043 19.7071 2.29289C19.5196 2.10536 19.2652 2 19 2H4.21L3.27 0M6 16C4.89 16 4 16.89 4 18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20C6.53043 20 7.03914 19.7893 7.41421 19.4142C7.78929 19.0391 8 18.5304 8 18C8 16.89 7.1 16 6 16Z" fill="#D7D1FF"/>
+                </svg>Cart
+            </button>
+        </header>
+
+        <main class="main">
+            <section class="cart-box">
+                <div class="cart-item">
+                    <img src="https://www.flowerchimp.com.ph/cdn/shop/files/2a_276a149e-4fc8-4148-8556-e0bf70f8b6ad_600x.jpg?v=1696560617" alt="Flower Image">
+                    <div class="cart-details">
+                        <h3>Hot Romance</h3>
+                        <p class="price">₱2,111</p>
+                    </div>
+                    <div class="quantity-box">
+                        <label>Quantity</label>
+                        <div class="quantity-control">
+                            <input type="number" value="1" min="1">
+                        </div>
+                    </div>
+                    <div class="total-box">
+                        <label>Total Amount</label>
+                        <p class="total">₱2,111</p>
+                    </div>
+                    <button class="remove-item">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#CADCED"/>
+                        </svg>
+                    </button>                    
+                </div>
+            
+                <div class="cart-item">
+                    <img src="https://www.flowerchimp.com.ph/cdn/shop/files/Anneliese1_34d7b164-d91e-47b8-9c5e-fce616c5a099_600x.jpg?v=1716874816" alt="Flower Image">
+                    <div class="cart-details">
+                        <h3>Anneliese</h3>
+                        <p class="price">₱2000</p>
+                    </div>
+                    <div class="quantity-box">
+                        <label>Quantity</label>
+                        <div class="quantity-control">
+                            <input type="number" value="1" min="1">
+                        </div>
+                    </div>
+                    <div class="total-box">
+                        <label>Total Amount</label>
+                        <p class="total">₱2000</p>
+                    </div>
+                    <button class="remove-item">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#CADCED"/>
+                        </svg>
+                    </button>   
+                </div>
+
+                <div class="cart-item">
+                    <img src="https://www.flowerchimp.com.ph/cdn/shop/files/PetiteLove1_aea88cd7-f59a-4e3e-bab4-e746d04abced_600x.jpg?v=1709797557" alt="Flower Image">
+                    <div class="cart-details">
+                        <h3>Petit Love</h3>
+                        <p class="price">₱1,799</p>
+                    </div>
+                    <div class="quantity-box">
+                        <label>Quantity</label>
+                        <div class="quantity-control">
+                            <input type="number" value="1" min="1">
+                        </div>
+                    </div>
+                    <div class="total-box">
+                        <label>Total Amount</label>
+                        <p class="total">₱1799</p>
+                    </div>
+                    <button class="remove-item">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#CADCED"/>
+                        </svg>
+                    </button>   
+                </div>
+            </section>    
+
+            <div id="overlay"></div>
+            <div id="checkout-form">
+                <div class="form-container">
+                    <div class="logo">
+                        <img class="shop-logo" src="C:\Users\ACER\Desktop\Armada-Project\Logo.png" alt="Logo">
+                        <img class="master-card" src="https://pngimg.com/uploads/mastercard/small/mastercard_PNG16.png" alt="Logo">
+                    </div>
+                    <span id="close-btn">&times;</span>
+                    <h2>Card Details</h2>
+                    <form class="form">
+                        <input type="text" placeholder="Card Name">
+                        <input type="text" placeholder="Card Number">
+                        <div class="row">
+                            <input type="text" placeholder="Expiration">
+                            <input type="text" placeholder="CVC">
+                        </div>
+                    </form>
+                    <button class="checkout-btn1">Proceed to Checkout</button>
+                </div>
+            </div>
+            
+            <section class="form">
+                <h2>Order Summary</h2>
+                <div class="summary">
+                    <p>Items <span>₱</span></p>
+                    <p>Shipping Fee <span>₱</span></p>
+                    <p class="total">Total Amount <span>₱</span></p>
+                </div>
+                <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
