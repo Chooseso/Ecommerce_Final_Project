@@ -1,0 +1,471 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    gap: 5px;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #414833;
+}
+header nav{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+}
+header nav .Log_in, #sign_up{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 100px;
+    color: #414833;
+    background-color: #E0D8B0;
+    box-shadow: 2px 2px 3px;
+    font-size: 15px;
+}
+aside{
+    width: 10%;
+    height: 1500px;
+    padding: 10px;
+    background-color: #414833;
+}
+
+aside img{
+    max-height: 7%;
+    min-width: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+main{
+    width: 90.5%;
+    position: absolute;
+    top: 10%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+main .section1-search_cart{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+main .section1-search_cart form{
+    min-width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+}
+main .section1-search_cart form #search{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0d8b0a8;
+    color: #414833;
+}
+main .section1-search_cart form button{
+    min-width: 100px;
+    padding: 10px;
+    font-size: 25px;
+    background-color: #E0D8B0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #414833;
+}
+main .section1-search_cart form button img{
+    height: 20px;
+    
+}
+main .categories{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+main .categories ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main .categories ul li button{
+    background-color: #E0D8B0;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 10px;
+}
+main .categories ul li button:hover{
+    opacity: 0.5;
+}
+
+main .categories ul li button .img_categ{
+    height: 21px;
+}
+main .products{
+    height: auto;
+    width: 89.2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    flex: 1;
+}
+main .products h3{
+    align-self: flex-start;
+    margin-left: 7%;
+}
+main .products section{
+    width: 90%;
+    height: auto;
+
+}
+main .products section ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5px;
+    flex-wrap: wrap;
+
+}
+
+main .products section ul li{
+    background-color: #414833;
+    border-radius: 10px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    box-shadow: 3px 3px 3px;
+}
+main .products section ul li:hover{
+    opacity: 0.5;
+}
+main .products section ul li img{
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+main .products section ul li h6{
+    font-size: 20px;
+    color: #E0D8B0;
+    font-weight: 0;
+}
+main .products section ul li h6, p{
+    width: 100%;
+}
+main .products section ul li p{
+    color: rgba(250, 210, 124, 0.801);
+}
+main .products section ul li p span{
+    font-size: 13px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#modal-login{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 1px black solid;
+    padding: 5px;
+    z-index: 1000;
+    background-color: #E0D8B0;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 80%;
+    transition: 200ms ease-in-out;
+    box-shadow: 3px 3px 3px rgb(44, 43, 43), -2px -2px 3px rgb(44, 43, 43);
+}
+
+#modal-login.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+#modal-login .close_button-login{
+    border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+#modal-login .close_button-login:hover{
+    color: rgb(250, 115, 115);
+}
+#modal-login .Info_Container-login{
+    height: 500px;
+    min-width: 350px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+}
+
+#modal-login .Info_Container-login section{
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+}
+#modal-login .Info_Container-login .background_img-login{
+    background-image: url(bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px 100%;
+    width: 60%;
+    border: 1px solid #414833;
+}
+
+#modal-login .Info_Container-login .Info-login{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80%;
+    width: auto;
+    flex-direction: column;
+    gap: 10%;
+    padding-top: 10px;
+}
+#modal-login .Info_Container-login .Info-login h2{
+    color: #414833;
+}
+#modal-login .Info_Container-login .Info-login .logo{
+    height: 150px;
+    width: 100%;
+}
+#modal-login .Info_Container-login .Info-login form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+#modal-login .Info_Container-login .Info-login form input{
+    min-width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    color: #414833;
+    box-shadow: 2px 2px 2px, -1px -1px 2px;
+    padding: 5px;
+}
+#modal-login .Info_Container-login .Info-login #password-hidden{
+    height: 20px;
+    position: absolute;
+    right:5%;
+    top: 43%;
+    cursor: pointer;
+}
+#modal-login .Info_Container-login .Info-login form #login{
+    cursor: pointer;
+}
+#modal-login .Info_Container-login .Info-login a{
+    font-size: 12px;
+    color: #414833;
+}
+#Overlay.login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #414833a2;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    z-index: 900;
+}
+
+#Overlay-login.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* sign up modal */
+
+
+#modal-signup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 1px black solid;
+    padding: 5px;
+    z-index: 1000;
+    background-color: #E0D8B0;
+    border-radius: 10px;
+    width: 600px;
+    max-width: 80%;
+    transition: 200ms ease-in-out;
+    box-shadow: 3px 3px 3px rgb(44, 43, 43), -2px -2px 3px rgb(44, 43, 43);
+}
+
+#modal-signup.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+#modal-signup .close_button-signup{
+    border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+#modal-signup .close_button-signup:hover{
+    color: rgb(250, 115, 115);
+}
+#modal-signup .Info_Container-signup{
+    height: 500px;
+    min-width: 350px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    flex-direction: row-reverse;
+}
+
+#modal-signup .Info_Container-signup section{
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+}
+#modal-signup .Info_Container-signup .background_img-signup{
+    background-image: url(bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px 100%;
+    min-width: auto;
+    max-width: 60%;
+    border: 1px solid #414833;
+}
+
+#modal-signup .Info_Container-signup .Info-signup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    gap: 5%;
+}
+#modal-signup .Info_Container-signup .Info-signup h2{
+    color: #414833;
+}
+#modal-signup .Info_Container-signup .Info-signup .logo{
+    height: 150px;
+    width: 100%;
+}
+#modal-signup .Info_Container-signup .Info-signup form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+#modal-signup .Info_Container-signup .Info-signup form input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    color: #414833;
+    box-shadow: 2px 2px 2px, -1px -1px 2px;
+    padding: 5px;
+}
+#modal-signup .Info_Container-signup .Info-signup form #signup{
+    cursor: pointer;
+}
+#modal-signup .Info_Container-signup .Info-signup form #password-hidden-signup{
+    height: 20px;
+    position: absolute;
+    right:5%;
+    top: 45.8%;
+    cursor: pointer;
+}
+
+
+#modal-signup .Info_Container-signup .Info-signup form .name{
+    width:  48%;
+}
+#modal-signup .Info_Container-signup .Info-signup form #login{
+    cursor: pointer;
+}
+
+#modal-signup .Info_Container-signup .Info-signup a{
+    font-size: 12px;
+    color: #414833;
+}
+#Overlay-signup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #414833a2;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    z-index: 900;
+}
+
+#Overlay-signup.active{
+    opacity: 1;
+    pointer-events: all;
+}
