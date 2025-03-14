@@ -93,7 +93,7 @@ main .section1-search_cart form #search{
     height: 40px;
     padding: 10px;
     border-radius: 10px;
-    background-color: #e0d8b0a8;
+    border: 1px solid #414833;
     color: #414833;
 }
 main .section1-search_cart form a{
@@ -327,6 +327,12 @@ main .products section ul li p span{
     transition: 200ms ease-in-out;
     opacity: 0;
     z-index: 900;
+}
+
+.product_button.highlight {
+    background-color: #9C89FF; /* Highlight color */
+    color: white;
+    border: 2px solid #9C89FF;
 }
 
 #Overlay-login.active{

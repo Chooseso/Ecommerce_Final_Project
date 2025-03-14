@@ -151,6 +151,19 @@ document.getElementById('all_tulips').addEventListener('click', function() {
     document.querySelector('.tulip_products').classList.remove('hidden');
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".product_button");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Remove 'highlight' class from all buttons
+            buttons.forEach(btn => btn.classList.remove("highlight"));
+            
+            // Add 'highlight' class to the clicked button
+            this.classList.add("highlight");
+        });
+    });
+});
 
 document.querySelector("form").addEventListener("submit", function(e){
     e.preventDefault()
