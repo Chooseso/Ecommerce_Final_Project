@@ -12,7 +12,7 @@
 }
 
 .sidebar {
-    width: 60px;
+    width: 110px;
     background: #414833;
     padding: 20px 10px;
     display: flex;
@@ -27,7 +27,10 @@
 }
 
 .logo{
-    display: flex;
+    max-height: 7%;
+    min-width: auto;
+    border-radius: 10px;
+
 }
 
 .sidebar-logo{
@@ -38,7 +41,7 @@
 }
 
 .shop-logo {
-    height: 27px; 
+    height: 27px;
 }
 
 .master-card{
@@ -56,12 +59,15 @@
     font-size: 14px;
     font-weight: bold;
     width: 1584px;
-    height: 40px;
-    margin-left: 80px;
+    height: 70px;
+    margin-left: 135px;
     position: fixed;
     top: 0;
 }
-
+.navbar h3{
+    color: #E0D8B0;
+    
+}
 .icon {
     font-size: 16px;
     margin-right: 5px;
@@ -97,7 +103,6 @@
 
 .search-box {
     display: flex;
-    background: #E0D8B0;
     padding: 8px;
     border-radius: 8px;
     width: 300px;
@@ -109,8 +114,7 @@
 }
 
 .search-box input {
-    border: none;
-    background: #e0d8b0;
+    border: 1px solid #414833;
     outline: none;
     flex: 1;
     padding: 5px;

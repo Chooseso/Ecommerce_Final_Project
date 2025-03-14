@@ -11,7 +11,7 @@ body {
 }
 
 .sidebar {
-    width: 60px;
+    width: 110px;
     background: #414833;
     padding: 20px 10px;
     display: flex;
@@ -42,12 +42,14 @@ body {
     font-size: 14px;
     font-weight: bold;
     width: 90%;
-    height: 40px;
-    margin-left: 80px;
+    height: 70px;
+    margin-left: 135px;
     position: fixed;
     top: 0;
 }
-
+.navbar h3{
+    color: #E0D8B0;
+}
 .text {
     flex-grow: 1;
     color: #e0d8b0;
@@ -77,14 +79,14 @@ body {
 
 .search-box {
     display: flex;
-    background: #414833;
     padding: 8px;
     border-radius: 8px;
     width: 300px;
+    border: 1px solid #414833;
 }
 
 .input-color::placeholder {
-    color: #E0D8B0;
+    color: #414833;
     opacity: 1;
 }
 
@@ -108,8 +110,8 @@ body {
     gap: 10px;
     display: flex;
     align-items: center;
-    background: #414833;
-    color: #e0d8b0;
+    background: #e0d8b0;;
+    color: #414833;
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -508,3 +510,4 @@ body {
         width: 100%;
     }
 }*/
+
